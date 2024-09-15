@@ -1,0 +1,123 @@
+.header {
+    position: relative;
+    height: 459px;
+    overflow: hidden; 
+    padding-top: 24px;
+    margin-bottom: 30px;
+}
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: -152px;
+    left: 50%;
+    width: 611px;
+    height: 611px;
+    background-color: rgba(255, 171, 8, 1);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.logo-burger{
+    width: 176px;
+    height: 204px;
+
+}
+
+.hero-text {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
+    &-span {
+        color: rgba(255, 92, 0, 1);
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.free-delivery {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.37px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+
+    &-span {
+        width: 600;
+    }
+}
+
+.header-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 438px;
+}
+
+@media (min-width:600px) {
+    .header::before {
+        width: 100%;
+        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 40%;
+    }
+}
+
+@media (min-width:768px) {
+    .header-text-container {
+        gap: 26px;
+        align-items: baseline;
+    }
+
+    .title-container {
+        flex-direction: row-reverse;
+    }
+
+    .hero-text {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 43.2px;
+        text-align: start;
+    }
+}
+
+@media (min-width:1024px) {
+    .hero-text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .free-delivery {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+
+        &-span {
+            font-weight: 600;
+        }
+    }
+
+    .logo-burger {
+        width: 254px;
+        height: 290px;
+    }
+}

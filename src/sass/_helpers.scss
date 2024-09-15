@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+.wrapper {
+    width: calc(100% - 20px);
+    max-width: calc(1440px - (75px * 2));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-grey {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        width: calc(100% - 128px);
+    }
+}
+
+@media (min-width:1024px) {
+    .wrapper {
+        width: calc(100% - 64px);
+    }
+}
+
+@media (min-width:1440px) {
+    .wrapper {
+        width: calc(100% - 150px);
+    }
+}
