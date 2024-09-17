@@ -85,11 +85,21 @@
     margin-right: 10px;
 }
 
+@media (min-width:768px) {
+    .menu-food {
+        gap: 12px;
+    }
+}
+
 @media (min-width:1024px) {
     .btn-menu-food {
         font-size: 16px;
         font-weight: 400;
         line-height: 21.82px;
         padding: 0px 14px;
+    }
+
+    .menu-food {
+        gap: 24px;
     }
 }

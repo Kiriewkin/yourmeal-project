@@ -46,7 +46,7 @@ function copy() {
 
   function js() {
     return gulp
-    .src('./src/js/*.js') // Обрабатываем все JS файлы
+    .src('./src/js/main.js') // Обрабатываем все JS файлы
     .pipe(gulp.dest('./build'));
 }
 

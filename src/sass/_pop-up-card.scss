@@ -1,0 +1,122 @@
+.popup-header-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.popup-footer-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cart-total {
+    text-align: right;
+}
+
+.popup-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-button-card {
+    font-family: Nunito;
+    width: 218px;
+    height: 30px;
+    padding: 9px;
+    background-color: #f86310;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+
+}
+
+.popup-header-card .food-image {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.popup-content .burger-section-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: #000;
+}
+
+.sostav-list {
+    font-family: Nunito;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.sostav-list:first-child {
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+.popup-card-text-container 
+    
+
+.w-50 .food-name {
+    margin-bottom: 0px;
+}
+
+@media (min-width:768px) {
+    .popup-header-card .food-image {
+        width: 50%;
+    }
+
+    .popup-card-text-container {
+        width: 50%;
+    }
+
+    .popup-header-card {
+        flex-direction: row;
+    }
+
+    .popup-footer-card {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .popup-content .burger-section-title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+
+    .sostav-list {
+        font-size: 12px;
+    }
+
+    .popup-button-card {
+        width: 276px;
+        height: 40px;
+        font-size: 16px;
+        padding: 12px;
+        margin-right: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 12px;
+    }
+
+    .popup-header-card {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+}

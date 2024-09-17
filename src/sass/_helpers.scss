@@ -20,6 +20,18 @@ body {
     background-color: rgba(249, 249, 249, 1);
 }
 
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
 @media (min-width:768px) {
     .wrapper {
         width: calc(100% - 128px);
@@ -34,6 +46,6 @@ body {
 
 @media (min-width:1440px) {
     .wrapper {
-        width: calc(100% - 150px);
+        width: 100%;
     }
 }

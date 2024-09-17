@@ -19,6 +19,7 @@
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.03); 
@@ -110,6 +111,11 @@
 
 @media (min-width:1024px) {
     .food-grid {
+        gap: 30px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 

@@ -14,6 +14,7 @@
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-csso": "^4.0.1",
+    "gulp-js-minify": "^0.0.3",
     "gulp-sass": "^5.1.0",
     "sass": "^1.78.0"
   },

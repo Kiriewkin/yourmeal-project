@@ -169,5 +169,60 @@
 .cart-container {
     border-radius: 12px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width:1024px) {
+    .cart-item-quantity {
+        padding: 9 12px;
+        width: 84px;
+        height: 40px;
+    }
+
+    .cart-item-quantity span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .cart-item-quantity button {
+        font-size: 16px;
+    }
+}
+
+/* По умолчанию контейнер занимает полную ширину */
+.main-container {
+    display: block;
+}
+
+/* На экранах шириной 1024px и больше */
+@media (min-width: 1024px) {
+    .main-container {
+        display: flex; /* Устанавливаем flexbox для горизонтального выравнивания */
+        gap: 30px; /* Задаём расстояние между корзиной и карточками */
+        align-items: flex-start; /* Выравнивание по верхнему краю */
+    }
+
+    /* Секция с корзиной будет фиксированной ширины */
+    .cart-main {
+        margin-left: 10px;
+        flex: 0 0 auto; /* Не растягиваем секцию корзины */
+    }
+
+    /* Секция с карточками будет занимать оставшееся место */
+    .food-section {
+        flex: 1; /* Растягиваем секцию карточек товаров на оставшуюся ширину */
+    }
+
+    /* Максимальная ширина контейнера корзины */
+    .cart-container {
+        width: 300px; /* Устанавливаем фиксированную ширину для корзины */
+    }
+    
+
+     .wrapper-main {
+        max-width: 1290px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+    
 }
